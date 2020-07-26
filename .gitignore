@@ -1,3 +1,7 @@
 #Files
 *.pkl
 *.csv
+.ipynb_checkpoints
+
+#folders
+*/.ipynb_checkpoints/*
