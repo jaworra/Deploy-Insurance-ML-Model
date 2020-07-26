@@ -1,6 +1,6 @@
 FROM python:3.7
 
-RUN pip install virtualenv
+RUN pip install virtualenv --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org
 ENV VIRTUAL_ENV=/venv
 RUN virtualenv venv -p python3
 ENV PATH="VIRTUAL_ENV/bin:$PATH"
@@ -9,7 +9,7 @@ WORKDIR /app
 ADD . /app
 
 # Install dependencies
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host=files.pythonhosted.org
 
 # copying all files over
 COPY . /app
