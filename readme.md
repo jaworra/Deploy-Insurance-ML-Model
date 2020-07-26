@@ -1,8 +1,8 @@
-# Online Model Deploy
+# Deploy-Insurance-ML-Model
 Build and deploy your machine learning web app
 
 # Requirements
-PyCaret, Flask, Docker, Streamlit
+PyCaret, Docker, Streamlit, AWS
 
 
 # Tips for stream lit
